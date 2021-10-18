@@ -1,0 +1,33 @@
+.logo {
+	height: 30px;
+	width: 70px;
+}
+.brand-text {
+	color: #205f8c;
+	font-weight: 600;
+	font-size: 1.2rem;
+}
+.cart-text {
+	text-decoration: none;
+	font-weight: 500;
+}
+.navbar-text {
+	color: #000;
+	font-size: 1.3rem;
+}
+.nav-items-70 {
+	flex-basis: 70%;
+}
+.nav-icon {
+	height: 40px;
+}
+@media screen and (max-width: 768px) {
+	.expanding-nav {
+		display: none;
+	}
+}
+@media screen and (min-width: 768px) {
+	.collapsing-nav {
+		display: none;
+	}
+}

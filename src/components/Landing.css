@@ -1,0 +1,31 @@
+.carousal-img {
+	max-width: 100%;
+	display: block;
+	height: auto;
+	text-align: "center";
+}
+.carousal-indicator-color {
+	color: #205f8c;
+}
+.product-header-text {
+	color: #205f8c;
+	font-weight: 600;
+}
+
+.card-desc {
+	text-align: justify;
+}
+
+.card-more {
+	color: #fff;
+	background-color: #205f8c;
+}
+.card-custom {
+	width: 300px;
+}
+
+.horizontal-line {
+	height: 1px;
+	width: 100%;
+	background-color:#205f8c;
+}
