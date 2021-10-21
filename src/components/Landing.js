@@ -9,11 +9,6 @@ const Landing = () => {
 	const setCarousal = (item) => {
 		setCarousalIndicator(item);
 	};
-	useEffect(() => {
-		setTimeout(() => {
-			changeCarousal(1);
-		}, 2000);
-	}, [carousalIndicator]);
 	const changeCarousal = (step) => {
 		var carousalIndicatorTemp = carousalIndicator + step;
 		if (carousalIndicatorTemp < 0) {
@@ -21,6 +16,11 @@ const Landing = () => {
 		}
 		setCarousalIndicator(carousalIndicatorTemp % 3);
 	};
+	useEffect(() => {
+		setTimeout(() => {
+			changeCarousal(1);
+		}, 2000);
+	}, [carousalIndicator]);
 	return (
 		<div>
 			{/* CAROUSAL */}
@@ -70,6 +70,7 @@ const Landing = () => {
 				<div className="carousel-inner">
 					<div
 						className={
+							// eslint-disable-next-line
 							carousalIndicator == 0 ? "carousel-item active" : "d-none"
 						}
 					>
@@ -81,6 +82,7 @@ const Landing = () => {
 					</div>
 					<div
 						className={
+							// eslint-disable-next-line
 							carousalIndicator == 1 ? "carousel-item active" : "d-none"
 						}
 					>
@@ -92,6 +94,7 @@ const Landing = () => {
 					</div>
 					<div
 						className={
+							// eslint-disable-next-line
 							carousalIndicator == 2 ? "carousel-item active" : "d-none"
 						}
 					>
@@ -174,14 +177,7 @@ const Landing = () => {
 				</div>
 			</div>
 
-			{/* copyright */}
-			<div className="bg-light d-flex flex-column h-auto d-flex align-items-center">
-				<div className="horizontal-line"></div>
-
-				<div className="mt-3">
-					<p>© Copyright 2021 EBU </p>
-				</div>
-			</div>
+			
 		</div>
 	);
 };

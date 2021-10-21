@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import logo from "./logo.png";
 import "./Mainbar.css";
 const Mainbar = () => {
@@ -24,13 +25,19 @@ const Mainbar = () => {
 				</div>
 				<div className="pt-2">
 					<div>
-						<img src={logo} alt="logo" className="logo mt-2 ms-3" />
+						<Link to="/">
+							<img src={logo} alt="logo" className="logo mt-2 ms-3" />
+						</Link>
 					</div>
 				</div>
 				<div className="expanding-nav">
 					<div className="d-flex justify-content-between">
 						<div className=" d-flex navs-item mx-3 py-3">
-							<div className="dropdown" onMouseEnter={()=>setNavToggle1(1)} onMouseLeave={()=>setNavToggle1(0)}>
+							<div
+								className="dropdown"
+								onMouseEnter={() => setNavToggle1(1)}
+								onMouseLeave={() => setNavToggle1(0)}
+							>
 								<button
 									onClick={productToggle}
 									className="btn dropdown-toggle"
@@ -68,14 +75,23 @@ const Mainbar = () => {
 						</div>
 						<div className="navs-item mx-3 py-4">ABOUT US</div>
 						<div className="navs-item mx-3 py-4">TESTIMONIALS</div>
-						<div className="navs-item mx-3 py-4">CONTACT</div>
+						<div className="navs-item mx-3 py-4">
+							<Link className="ebu-link" to="/contact-us">
+								CONTACT
+							</Link>
+						</div>
 					</div>
 				</div>
 				<div className=" d-flex py-2">
 					<div className="nav-item me-1 ">
 						<a className="nav-link mr-auto" href="#home">
 							<i className="fas fa-shopping-bag fa-2x"></i>{" "}
-							<span className="d-none d-md-inline font-weight-bold cart-text navbar-text" href="#home">0 Items</span>
+							<span
+								className="d-none d-md-inline font-weight-bold cart-text navbar-text"
+								href="#home"
+							>
+								0 Items
+							</span>
 						</a>
 					</div>
 					<div className="nav-item me-lg-4">
@@ -153,7 +169,9 @@ const Mainbar = () => {
 						<p>TESTIMONIALS</p>
 					</div>
 					<div className="d-flex mt-1 ps-2 pt-2 nav-icon border fw-bolder">
-						<p>CONTACT</p>
+						<Link className="ebu-link" to="/contact-us">
+							CONTACT
+						</Link>
 					</div>
 				</div>
 			</div>

@@ -27,5 +27,30 @@
 .horizontal-line {
 	height: 1px;
 	width: 100%;
-	background-color:#205f8c;
+	background-color: #205f8c;
+}
+.footer-height {
+	min-height: calc(100vh - 8rem);
+}
+.width-90 {
+	width: 90%;
+}
+.overflow-hidden-map {
+	overflow: hidden;
+	background: #000;
+}
+.icon-contact {
+	color: white;
+}
+.icon-contact-holder {
+	background-color: #205f8c;
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+	margin-top: 20px;
+}
+@media screen and (min-width: 768px) {
+	.width-md-50 {
+		width: 40%;
+	}
 }

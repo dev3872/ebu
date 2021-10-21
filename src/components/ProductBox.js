@@ -13,7 +13,7 @@ const ProductBox = (props) => {
 				<h5 className="card-title text-center py-4">{props.productName}</h5>
 				<p className="card-text mb-3 lead card-desc">{props.productDesc}</p>
 				<div className="d-flex justify-content-center">
-					<a href="#" className="btn rounded-pill text-center card-more">
+					<a href="#home" className="btn rounded-pill text-center card-more">
 						More
 					</a>
 				</div>
