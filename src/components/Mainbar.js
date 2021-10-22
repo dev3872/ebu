@@ -25,7 +25,7 @@ const Mainbar = () => {
 				</div>
 				<div className="pt-2">
 					<div>
-						<Link to="/">
+						<Link onClick={()=>setNavToggleSm(0)} to="/">
 							<img src={logo} alt="logo" className="logo mt-2 ms-3" />
 						</Link>
 					</div>
@@ -169,7 +169,7 @@ const Mainbar = () => {
 						<p>TESTIMONIALS</p>
 					</div>
 					<div className="d-flex mt-1 ps-2 pt-2 nav-icon border fw-bolder">
-						<Link className="ebu-link" to="/contact-us">
+						<Link onClick={()=>setNavToggleSm(0)} className="ebu-link" to="/contact-us">
 							CONTACT
 						</Link>
 					</div>

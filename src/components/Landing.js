@@ -20,6 +20,7 @@ const Landing = () => {
 		setTimeout(() => {
 			changeCarousal(1);
 		}, 2000);
+		// eslint-disable-next-line
 	}, [carousalIndicator]);
 	return (
 		<div>

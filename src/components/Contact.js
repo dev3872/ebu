@@ -51,6 +51,7 @@ const Contact = () => {
 				<div className="d-flex mt-3 bg-light flex-column align-items-start justify-content-start width-90 width-md-50 overflow-hidden-map">
 					<div className="mt-2 map-class">
 						<iframe
+						    title="map"
 							width="568px"
 							height="500px"
 							frameborder="0"
@@ -68,6 +69,7 @@ const Contact = () => {
 						<a
 							id="largeMapLink"
 							target="_blank"
+							rel='noreferrer'
 							href="https://www.bing.com/maps?cp=25.72504667351231~85.51530629882814&amp;sty=r&amp;lvl=6&amp;FORM=MBEDLD"
 						>
 							View Larger Map
@@ -76,6 +78,7 @@ const Contact = () => {
 						<a
 							id="dirMapLink"
 							target="_blank"
+							rel='noreferrer'
 							href="https://www.bing.com/maps/directions?cp=25.72504667351231~85.51530629882814&amp;sty=r&amp;lvl=6&amp;rtp=~pos.25.72504667351231_85.51530629882814____&amp;FORM=MBEDLD"
 						>
 							Get Directions
