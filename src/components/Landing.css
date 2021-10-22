@@ -54,3 +54,26 @@
 		width: 40%;
 	}
 }
+.testimonials-box-height{
+	height:400px;
+	color: #111111;
+    background-color: #f6da0a;
+}
+.margin-negative{
+	margin-top:-200px;
+}
+.testimonial-size{
+	height:500px;
+	border-radius: 10px;
+	background-color: whitesmoke;
+}
+.testimonial-image{
+	height: 150px;
+	width:150px;
+	border-radius: 50%;
+}
+.testimonials-footer{
+	margin: 100px 0 0 0;
+	height: 200px;
+	background-color: whitesmoke;
+}

@@ -4,6 +4,7 @@ import Landing from "./components/Landing";
 import Mainbar from "./components/Mainbar";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import Testimonials from "./components/Testimonials";
 const App = () => {
 	return (
 		<Router>
@@ -11,18 +12,18 @@ const App = () => {
 				<Mainbar />
 			</div>
 			<Switch>
-				{/* <Route path="/about">
-            <About />
-          </Route>*/}
-          <Route path="/contact-us">
-            <Contact />
-          </Route> 
+				<Route path="/testimonials">
+					<Testimonials/>
+				</Route>
+				<Route path="/contact-us">
+					<Contact />
+				</Route>
 				<Route path="/">
 					<Landing />
 				</Route>
 			</Switch>
 			<div>
-				<Footer/>
+				<Footer />
 			</div>
 		</Router>
 	);
