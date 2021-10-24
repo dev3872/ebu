@@ -5,6 +5,7 @@ import Mainbar from "./components/Mainbar";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Testimonials from "./components/Testimonials";
+import AboutUs from "./components/AboutUs";
 const App = () => {
 	return (
 		<Router>
@@ -12,6 +13,9 @@ const App = () => {
 				<Mainbar />
 			</div>
 			<Switch>
+				<Route path="/about-us">
+					<AboutUs/>
+				</Route>
 				<Route path="/testimonials">
 					<Testimonials/>
 				</Route>

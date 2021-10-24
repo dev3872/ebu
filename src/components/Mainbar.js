@@ -73,7 +73,11 @@ const Mainbar = () => {
 								</ul>
 							</div>
 						</div>
-						<div className="navs-item mx-3 py-4">ABOUT US</div>
+						<div className="navs-item mx-3 py-4">
+							<Link className="ebu-link" to="/about-us">
+								ABOUT US
+							</Link>
+						</div>
 						<div className="navs-item mx-3 py-4">
 							<Link className="ebu-link" to="/testimonials">
 								TESTIMONIALS
@@ -167,7 +171,9 @@ const Mainbar = () => {
 						<p className="ms-3">PRODUCT3</p>
 					</div>
 					<div className="d-flex mt-1 ps-2 pt-2 nav-icon border fw-bolder">
-						<p>ABOUT US</p>
+						<Link onClick={()=>setNavToggleSm(0)} className="ebu-link" to="/about-us">
+								ABOUT US
+							</Link>
 					</div>
 					<div className="d-flex mt-1 ps-2 pt-2 nav-icon border fw-bolder">
 						<Link onClick={()=>setNavToggleSm(0)} className="ebu-link" to="/testimonials">
