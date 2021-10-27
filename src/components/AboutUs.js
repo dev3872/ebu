@@ -131,7 +131,7 @@ const AboutUs = () => {
 					<div className="process-line"></div>
 				</div>
 				<div className="col-12 col-md-6">
-					<img src={teamwork} style={{ maxHeight: "500px" }} />
+					<img src={teamwork} className="img-fluid" />
 				</div>
 				<div className="col-12 col-md-6">
 					<div className="row flex m-4">
@@ -157,7 +157,7 @@ const AboutUs = () => {
 						<div className="process-line"></div>
 				</div>
 				<div className="col-12 col-md-6 d-md-none">
-					<img src={help} style={{ maxHeight: "500px" }} />
+					<img src={help} className="img-fluid" />
 				</div>
 				<div className="col-12 col-md-6">
 					<div className="row flex m-4">
