@@ -96,17 +96,41 @@
 .about-us-padding {
 	padding: 2rem 0 1rem 4rem;
 }
-.hr-line{
+.hr-line {
 	width: 200px;
 	height: 2px;
 	margin: 0.5rem 0 0.5rem 4rem;
 	background-color: #205f8c;
 }
-.btn-about-us{
+.btn-about-us {
 	margin: 1rem 0 0 4rem;
 	border-radius: 10px;
 }
-.img-vision{
+.img-vision {
 	max-height: 150px;
-	z-index:25;
+	z-index: 25;
+}
+.text-weight {
+	font-weight: 600;
+}
+.process-line {
+	height: 2px;
+	margin-left: 20px;
+	width: 350px;
+	background-color: #205f8c;
+}
+.line-under-text{	
+	background-color:#f6da0a;
+	height: 2px;
+	width: 200px;
+	margin-top:10px;
+	margin-bottom: 30px;
+}
+.text-under{
+	text-decoration: none;
+	color: black;
+}
+.address-text{
+	margin: 0 0 0 0;
+	font-size: 1.1rem;
 }
